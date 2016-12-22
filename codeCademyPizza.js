@@ -2,7 +2,7 @@
 
 //Stage 1
 function takeOrder(topping,crustType){
-  debug('Order:' + crustType + ' pizza topped with ' + topping);
+  console.log('Order:' + crustType + ' pizza topped with ' + topping);
 }
 
 takeOrder('bacon', 'thin');
@@ -22,7 +22,25 @@ function totalOrder(numOfPizza){
 	return(numOfPizza * 7.50);
 }
 
-debug(takeOrder('bacon', 'thin'));
-debug(takeOrder('pepperoni', 'thick'));
-debug(takeOrder('cheesy', 'extra-cheese'));
-debug(totalOrder(numberOfPizza));
+console.log(takeOrder('bacon', 'thin'));
+console.log(takeOrder('pepperoni', 'thick'));
+console.log(takeOrder('cheesy', 'extra-cheese'));
+console.log(totalOrder(numberOfPizza));
+
+//Stage 3 - Codecademy
+
+var orderCount = 0;
+
+function takeOrder(topping,crustType){
+  orderCount = orderCount + 1;
+  console.log('Order:' + crustType + ' pizza topped with ' + topping);
+}
+
+function getSubTotal(itemCount){
+  return(itemCount * 7.5);
+}
+
+takeOrder('bacon', 'thin');
+takeOrder('pepperoni', 'thick');
+takeOrder('cheesy', 'extra-cheese');
+console.log(getSubTotal(orderCount));
