@@ -6,10 +6,10 @@ var whatVariableIsit = 4.7;
 
 function useEveryVariable(parameter){
 	switch(parameter){
-		case '4':
-			console.log('This is a whole number aka integer');
+		case 4:
+			console.log('This is a whole number aka integer' + para);
 			break;
-		case '4.7':
+		case 4.7:
 			console.log('This is a float');
 			break;
 			//Commenting it the same as swift
