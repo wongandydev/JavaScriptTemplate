@@ -1,7 +1,7 @@
 
 //Global Scope
 var gettingStartedOnJavascript = true;
-var number = 4;
+var integer = 4;
 var float = 4.7;
 var string = 'Hi!';
 var whatVariableIsit = 4.7;
@@ -13,21 +13,47 @@ function useEveryVariable(parameter){
 	var functionalScope = 4;//Only accessible within the function, will not work outside the function
 	switch(parameter){
 		case 4:
-			console.log('This is a whole number aka integer' + para);
+			return('This is a whole number aka integer ' + parameter);
 			break;
 		case 4.7:
-			console.log('This is a float');
+			return('This is a float');
 			break;
 			//Commenting it the same as swift
 			//I can not get used to use single quote
 		case 'Hi!':
-			console.log('This is a string');
+			return('This is a string');
 			break;
 		default:
-			console.log('What the heck is this?');
+			return('What the heck is this?');
 			break;
 	}
 }
 
-useEveryVariable(4.7);
-console.log(array); //console.log is the print statement for Javascript
+function usingPrintStatementInsteadOfReturn(input){
+	if (1 >= input){
+		debug('You are not better than me!');
+	}
+	else if(1 <= input){
+		debug('You are greater than me!');
+	}
+	else if (1 === input){
+		debug('We are the same!');
+	}
+}
+
+function functionDoNotNeedParamater(){
+	if(float >= integer){
+		return('The float is larger than the integer today');
+	}
+	else if(float === integer){
+		return('Float and integer are equal today!');
+	}
+	else if(float <= integer){
+		return('Float was beaten by integer');
+	}
+}
+
+debug(array[0]); //debug is the print statement for Javascript
+debug(useEveryVariable('Hello'));
+usingPrintStatementInsteadOfReturn(5);
+debug(functionDoNotNeedParamater());
