@@ -53,6 +53,16 @@ function functionDoNotNeedParamater(){
 	}
 }
 
+array.push('I\'ve', 'been');//adds i've and been in to the end of the array. 
+							//'.push' will add the items you wnat to add to the end of the array. 
+array.pop(); //Removes the last item on the array
+array.shift()//Removes the first item on the array
+array.unshift('Goodbye');//Adds Good bye to the beginning on the array.
+array.indexOf('me');//Finds the index of the parameter which is 'me'
+array.splice(1,1);// Removes all items at position 1, and only one;
+//array.splice(position, number of items to remove from position on)
+//so if it is array.splice(2,5) it will start remove items at array[2] and remove 5 items so 2,3,4,5,7. 
+array.slice(); //copies the array
 
 //Javascript can print the letters in the string in the same way you print items in an array
 console.log(string[0]); //Will print the first character in the string.
@@ -60,6 +70,8 @@ console.log(array); //prints the whole array
 //First item in an array starts at zero (0) instead of 1. 
 console.log(array[0]); //prints the first item in the array. 
 //console.log is the print statement for Javascript
+console.log('This is the length of \'Hello World\': ' + 'Hello World'.length); //Will print the length of 'Hello World'
+console.log('This is the length of the array. It should have an output of three unless you add or subtract items in the array: ' + array.length); //Prints the length of the array (Output: 3)
 console.log(useEveryVariable('Hello')); 
 usingPrintStatementInsteadOfReturn(5);
 console.log(functionDoNotNeedParamater()); 
