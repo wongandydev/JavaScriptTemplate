@@ -53,6 +53,9 @@ function functionDoNotNeedParamater(){
 	}
 }
 
+
+//Javascript can print the letters in the string in the same way you print items in an array
+console.log(string[0]); //Will print the first character in the string.
 console.log(array); //prints the whole array
 //First item in an array starts at zero (0) instead of 1. 
 console.log(array[0]); //prints the first item in the array. 
