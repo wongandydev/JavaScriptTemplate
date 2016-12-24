@@ -31,13 +31,13 @@ function useEveryVariable(parameter){
 
 function usingPrintStatementInsteadOfReturn(input){
 	if (1 >= input){
-		debug('You are not better than me!');
+		console.log('You are not better than me!');
 	}
 	else if(1 <= input){
-		debug('You are greater than me!');
+		console.log('You are greater than me!');
 	}
 	else if (1 === input){
-		debug('We are the same!');
+		console.log('We are the same!');
 	}
 }
 
@@ -53,7 +53,20 @@ function functionDoNotNeedParamater(){
 	}
 }
 
-debug(array[0]); //debug is the print statement for Javascript
-debug(useEveryVariable('Hello'));
+console.log(array); //prints the whole array
+//First item in an array starts at zero (0) instead of 1. 
+console.log(array[0]); //prints the first item in the array. 
+//console.log is the print statement for Javascript
+console.log(useEveryVariable('Hello')); 
 usingPrintStatementInsteadOfReturn(5);
-debug(functionDoNotNeedParamater());
+console.log(functionDoNotNeedParamater()); 
+// If we use return statement in the function instead of console.log, 
+// we need to actually print it here so it shows up.
+
+
+
+
+
+
+
+
