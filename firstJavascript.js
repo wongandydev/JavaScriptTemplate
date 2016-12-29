@@ -5,6 +5,7 @@ var integer = 4;
 var float = 4.7;
 var string = 'Hi!';
 var whatVariableIsit = 4.7;
+var randomNumber = Math.floor((Math.random() * 20) + 2); //Will produce a random number from 2 to 20 //If '+1' didn't exist, then it would automatiocaly start 1 1 
 //Global Scope 
 
 var array = ['Hello','it\'s', 'me']; //Array 
@@ -80,6 +81,7 @@ console.log(functionDoNotNeedParamater());
 
 
 //For Loop
+//Good only if you know how many times you want the code to repeat. 
 for (var i = 0; i < 10; i++){
 	console.log(i);//prints i 10 times, until condition (i < 10) is met. 
 }
@@ -91,6 +93,10 @@ for (var i = 0; i < 10; i++){
 		console.log('Second For Loop: ' + k);
 	}
 }
+ //While Loop
 
-
+ while (randomNumber !== 10){
+ 	console.log(randomNumber + 'is not the number we want');
+ }
+console.log('Found 10!');
 
