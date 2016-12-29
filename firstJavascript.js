@@ -9,7 +9,7 @@ var whatVariableIsit = 4.7;
 
 var array = ['Hello','it\'s', 'me']; //Array 
 
-function useEveryVariable(parameter){
+function useEveryVariable(parameter){ //Function using switch case and return 
 	var functionalScope = 4;//Only accessible within the function, will not work outside the function
 	switch(parameter){
 		case 4:
@@ -29,7 +29,7 @@ function useEveryVariable(parameter){
 	}
 }
 
-function usingPrintStatementInsteadOfReturn(input){
+function usingPrintStatementInsteadOfReturn(input){ //Function using if/else and console.log
 	if (1 >= input){
 		console.log('You are not better than me!');
 	}
@@ -41,7 +41,7 @@ function usingPrintStatementInsteadOfReturn(input){
 	}
 }
 
-function functionDoNotNeedParamater(){
+function functionDoNotNeedParamater(){ //function using no parameters 
 	if(float >= integer){
 		return('The float is larger than the integer today');
 	}
@@ -79,9 +79,18 @@ console.log(functionDoNotNeedParamater());
 // we need to actually print it here so it shows up.
 
 
+//For Loop
+for (var i = 0; i < 10; i++){
+	console.log(i);//prints i 10 times, until condition (i < 10) is met. 
+}
 
-
-
+//Double For Loop
+for (var i = 0; i < 10; i++){
+	console.log('First For Loop: ' + i);
+	for (var k = 0; k <= 10; k++){
+		console.log('Second For Loop: ' + k);
+	}
+}
 
 
 
