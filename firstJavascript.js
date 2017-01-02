@@ -100,3 +100,29 @@ for (var i = 0; i < 10; i++){
  }
 console.log('Found 10!');
 
+alert('Hello, this pop up will show up if you use script in HTML');//This will send a pop up.
+//But for this line to work with HTML or anything .js with HTML, you need to use this:
+//<script src='location of javaScript FIle'> </script>
+
+var accessToClassInHTML = document.getElementByClassName('className you want Javascript to have access to');
+//This will give JavaScript access to the element in html. SO if there is a class name called bob, we will write bob
+//and it will allow us to see accessToClassInHTML the class element we set it to.
+
+$(document).ready(functionDoNotNeedParamater); //jQuery ... This will run when it knows that document is ready before running fucntionDoNotNeedParameter
+//or what it wants to run inside the second parenthesis 
+// a.k.a callback
+
+//Slight jQuery Stuff
+itemOne.next() //Choose the next element //Output would be itemTwo 
+
+$(this) //Selects current item or what ever is being clicked. 
+
+.toggle('Time it takes for animation')
+
+.hide'Time it takes for animation')
+
+.show('Time it takes for animation')
+
+.slideToggle('Time it takes for animation')
+
+.text('...');
